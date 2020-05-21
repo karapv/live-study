@@ -1,0 +1,195 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+@import "animations"
+// Critical css
+::placeholder
+  color: #7c7c7c
+input, textarea
+  outline: none
+  @include reset-button
+  &:focus
+    color: #7c7c7c
+  &:focus,&:hover,&:active
+    @include reset-button
+::-webkit-scrollbar
+  width: 5px
+::-webkit-scrollbar-track
+  background: $white
+::-webkit-scrollbar-thumb
+  background: #00542C
+::-webkit-scrollbar-thumb:hover
+  background: #555
+
+*
+  margin: 0
+  padding: 0
+ul
+  list-style-type: none
+ul:not([class]) li,ol:not([class]) li
+  margin-bottom: 25px
+ol:not([class])
+  counter-reset: myCounter
+  li
+    @include list-type-none
+    padding-left: 50px
+    position: relative
+    &:before
+      counter-increment: myCounter
+      content: counter(myCounter)
+      display: inline-block
+      background: rgba(194, 219, 204, 0.3)
+      border-radius: 3px
+      color: #199525
+      font-size: 14px
+      width: 30px
+      height: 30px
+      position: absolute
+      line-height: 35px
+      text-align: center
+      top: 0
+      left: 0
+ul:not([class])
+  li:first-child
+    margin-top: 25px
+  li
+    @include list-type-none
+    position: relative
+    padding-left: 24px
+    &:before
+      content: ''
+      width: 7px
+      height: 7px
+      display: block
+      position: absolute
+      top: 35%
+      left: 0
+      border-radius: 50%
+      border: 2px solid #199525
+a:not([class])
+  text-decoration: underline
+button
+  @include reset-button
+  cursor: pointer
+section[class]
+  padding-bottom: 60px
+  padding-top: 60px
+section.banner-p-bottom
+  padding-bottom: 0
+section.banner-p-top
+  padding-top: 0
+body
+  min-width: 320px
+  max-width: 1980px
+  width: 100%
+  margin: 0 auto
+  position: relative
+  overflow-x: hidden
+  color: $default
+  background-color: $white
+  font-family: 'HelveticaNeueCyr', Helvetica, Arial, sans-serif
+  letter-spacing: 0.02em
+  @include font(300,14px,24px)
+  a
+    color: #199525
+  a:hover
+    color: #3eb54b
+    outline: none
+  a:active
+    color: #3eb54b
+    outline: none
+  blockquote
+    display: grid
+    grid-template-columns: 60px 1fr
+    grid-gap: 25px
+    &::before
+      content: '”'
+      display: block
+      width: 60px
+      height: 60px
+      text-align: center
+      color: #199525
+      font-size: 6em
+      border-radius: 50%
+      background: #efefef
+      line-height: 105px
+  p
+    margin-bottom: 30px
+//Titles
+h1,h2,h3,h4,h5,.h1-title,.h2-b-title,.h3-title,.h4-title,.h5-title,blockquote
+  margin: 10px 0
+.h2-b-title
+  color: #000000
+  font-size: 48px
+  line-height: 28px
+  margin-bottom: 20px
+.h3-title
+  margin: 1.9466666667rem 0 1.168rem 0
+.h4-title
+  margin: 1.52rem 0 .912rem 0
+.h5-title
+  margin: 1.0933333333rem 0 .656rem 0
+.subtitle
+  margin-bottom: 6px
+.info-title
+  margin-top: 0
+h1,.h1-title
+  @include font(bold,30px,30px)
+  color: $black
+h2,.h2-title
+  @include font(bold,24px,28px)
+  color: $black
+h3,.h3-title
+  @include font(bold,18px,18px)
+h4,.h4-title
+  @include font(bold,16px,16px)
+h5,.h5-title
+  @include font(normal,14px,28px)
+h6
+  @include font(normal,12px,10px)
+b,strong
+  font-weight: bold
+img
+  max-width: 100%
+  height: auto
+.title
+  font-size: 72px
+  line-height: 72px
+.title-center
+  text-align: center
+.hidden
+  display: none !important
+#header
+  position: relative
+  z-index: 2
+#main,#footer,#header
+  width: 100%
+section.grey-bg,div.grey-bg
+  background: #F4F4F4
+section.white-bg,div.white-bg
+  background: $white
+.mobile-block
+  display: none !important
+// containers
+.grid-container
+  display: grid
+  justify-content: space-between
+.flex-container
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+.container-fluid
+  padding: 0 5px
+  max-width: 1500px
+  margin: 0 auto
+.container
+  max-width: 1380px
+  padding: 0 30px
+  margin: 0 auto
+  position: relative
+.visible-block
+  display: flex !important
+//Settings for slider
+.slick-initialized .slick-slide
+  outline: none
+@import 'media'

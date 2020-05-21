@@ -1,0 +1,638 @@
+@import "vars"
+/*==========  Desktop First  ==========*/
+@media screen and (min-width: 1190px)
+  .project-page-list
+    .project-gallery-list
+      img
+        max-height: initial
+      a
+        display: none
+        max-height: 100%
+      a:nth-child(1),a:nth-child(2),a:nth-child(3)
+        display: block
+  .contacts-accordion-content-item:nth-child(2)
+    justify-content: center
+  .contacts-accordion-content-item:nth-child(3)
+    justify-content: end
+  .project-video
+    min-height: 390px
+  .product-menu-list + .product-menu-title
+    margin-top: 50px
+  .project-page.project-gallery
+    .project-gallery-main,.project-gallery-list,.project-gallery-content
+      max-height: 380px
+      overflow: hidden
+    .project-gallery-list
+      img
+        max-height: 106px
+@media screen and (max-width: 1320px)
+  .page-banner-item,div.service-banner-img
+    img
+      max-width: 100%
+      position: static
+      object-fit: cover
+      object-position: right
+@media screen and (max-width: 1280px)
+  .main-about,.page-banner-bg>.grid-container
+    grid-template-columns: 1fr
+  .page-banner-bg
+    background: none
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1190px)
+  /*Header*/
+  .header-mobile
+    display: block
+    height: 36px
+    background: #FCBD6D
+    color: $white
+    font-weight: bold
+    font-size: 18px
+    text-align: center
+    text-decoration: none
+    line-height: 36px
+    margin-top: 23px
+  .nav-menu
+    display: none
+  .header-container
+    grid-template-columns: 50px 1fr 50px
+    .header-contact-tel
+      display: none
+    .header-contact
+      justify-content: flex-end
+  .product-menu-container
+    order: -1
+    grid-template-columns: 1fr
+    width: 50px
+  .toggle-title
+    display: none
+  .logo
+    justify-content: center
+  .product-menu-wrapper
+    top: 0
+    width: 100%
+    left: 0
+    right: 0
+  /* How work */
+  .how-work-steps
+    background: none
+  /* Advantages */
+  .advantages-company
+    grid-template-columns: 1fr
+  .advantages-company-item:first-of-type
+    height: 500px
+  .advantages-list
+    grid-template-columns: 1fr
+  .advantages-number
+    left: calc(100%/2.5)
+  .partners-list
+    &>.grid-container
+      grid-template-columns: 1fr
+      grid-gap: 30px
+  .partners-list-item
+    text-align: center
+  //Project gallery
+  .project-tab-header,.vacancy-popup-cities
+    overflow-x: scroll
+  .project-tab-list-item
+    min-width: 200px
+  .project-gallery
+    grid-template-columns: 1fr
+    grid-gap: 30px
+  .project-gallery-main
+    height: 500px
+  .project-gallery-list
+    grid-template-columns: repeat(2,1fr)
+    img
+      width: 100%
+  .project-gallery-list a,.project-gallery-list img
+    max-height: inherit
+    max-width: inherit
+    min-height: 140px
+  .project-tab-list-item:not(:last-of-type)
+    margin-right: 30px
+  //last news
+  .last-news-list
+    grid-template-columns: repeat(2,1fr)
+  //Vacancy
+  .vacancy-popup-wrapper>.grid-container,.vacancy-container>.grid-container
+    grid-template-columns: 1fr
+  .vacancy-popup-cities-item
+    min-width: 125px
+  .vacancy-empty
+    display: none
+  .vacancy-popup
+    background-size: 100%
+  .vacancy-tab-list-item,.contacts-header-item
+    width: 100%
+    margin-bottom: 10px
+    border: 2px solid #DDDDDD
+  .vacancy-tab-list-item:not(:last-of-type),.contacts-header-item:not(:last-of-type)
+    margin-right: 0
+  .vacancy-popup-cities
+    order: -1
+  //Project page
+  .project-page-list
+    grid-template-columns: 1fr
+    grid-gap: 30px
+    margin-bottom: 40px
+    .project-gallery-list
+      grid-template-columns: repeat(2,1fr)
+@media only screen and (max-width: 1045px)
+  /*Popup Lead */
+  .lead-popup-img img
+    position: static
+  .lead-popup-footer
+    .lead-form-container
+      grid-template-columns: 1fr
+  //Page banner
+  .page-banner>.grid-container,.service-info-block>.grid-container
+    grid-template-columns: 1fr
+  div.service-info-block
+    padding-top: 20px
+  //Video reviews
+  .video-reviews-list
+    display: block
+  //Contacts
+  .contacts-item-header
+    width: 100%
+  .contacts-item-header.req,.contacts-accordion-content>.grid-container
+    grid-template-columns: 1fr
+  .contacts-accordion-header
+    font-size: 18px
+  .video-reviews-grid
+    grid-template-columns: 1fr
+  .sertificates-list
+    grid-template-columns: repeat(2,1fr)
+    img
+      width: 100%
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 995px)
+  section[class]
+    padding-top: 20px
+    padding-bottom: 20px
+  body
+    font-size: 12px
+  .history-success-info
+    line-height: inherit
+  .large-lead-form .lead-form-header-container
+    padding-top: 20px !important
+  .lead-form
+    background: #f9f9f9
+  .lead-form-header-container
+    padding-top: 0
+  /* Lead popup */
+  .lead-popup-img
+    display: none
+  .lead-popup-wrapper
+    .lead-form-footer
+      margin-top: 0
+  /*How work*/
+  .how-work-steps
+    grid-template-columns: repeat(auto-fit,320px)
+  //Lead form
+  .lead-form-container,.lead-form-header
+    display: block
+  .lead-form-input-container
+    margin-bottom: 30px
+  .lead-form-header
+    text-align: center
+  .lead-form-img
+    text-align: center
+    img
+      object-fit: contain
+      display: block
+      width: 100%
+      height: 100%
+      position: static
+  .lead-form-footer
+    margin-top: -40%
+    position: relative
+  //Footer
+  .footer-item
+    width: 50%
+    margin-bottom: 30px
+  //Info block
+  .page-banner-content
+    max-width: 100%
+    font-size: 12px
+  .page-banner .title
+    margin-bottom: 20px
+  .service-info-block-item p
+    font-size: 12px
+  .service-info-block.service-info-block-price
+    padding-left: 0
+    padding-right: 0
+    .service-info-block-item:first-of-type,.service-info-block-title
+      padding: 0 20px
+  //Page
+  .breadcrumbs
+    margin-bottom: 20px
+  section.page-banner
+    padding-top: 20px
+    padding-bottom: 20px
+  .btn
+    font-size: 12px
+  .sertificates
+    text-align: center
+  .info-title
+    font-size: 12px
+  //Current Product
+  section.tech-char
+    padding-left: 0
+    padding-right: 0
+  .current-product-main
+    grid-template-columns: 1fr
+  .current-product-header:not(.eqip-header)
+    background: $white
+  .current-product-nav
+    flex-wrap: wrap
+  .current-product-nav-item,.current-product-char-list-item
+    width: 100%
+    font-size: 12px
+    margin-right: 0 !important
+    margin-bottom: 20px
+  .current-product-char-list-item:before
+    font-size: 12px
+  .current-product-img img
+    width: 100%
+  .current-description-content p
+    font-size: 12px
+  .table-char-v1,.table-char-v2,.table-char-v3
+    display: none
+  .mobile-table-v1,.mobile-table-v2,.mobile-table-v3
+    display: block
+  .tech-char-first-title,.tech-char-title
+    margin-bottom: 17px
+    padding: 0 20px
+  //About company
+  .about-company-advantages-list,.about-company-info,.about-news-list,.about-news-item
+    grid-template-columns: 1fr
+    font-size: 14px
+  //Rewards
+  .rewards-list
+    grid-template-columns: repeat(2,1fr)
+  //Pays
+  .pay-methods-list
+    grid-template-columns: 1fr
+  //Blog
+  .blog-container
+    grid-template-columns: 1fr
+  .toggle-blog
+    display: grid
+  //Blog page
+  .blog-page-content-info
+    grid-template-columns: 1fr
+  .blog-page-content-info-item:not(:last-of-type)
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05)
+  body
+    blockquote
+      display: block
+      &::before
+        margin: 0 auto 15px auto
+        width: 36px
+        height: 36px
+        line-height: 56px
+        font-size: 36px
+  .blog-page-content-two-b
+    grid-template-columns: 1fr
+  .blog-page-banner-img
+    padding-left: 0
+    padding-right: 0
+/* Small Devices, Tablets */
+@media only screen and (max-width : 880px)
+  .toggle-nav
+    display: block
+  .mobile-block
+    display: block !important
+  .desktop-block
+    display: none
+  .container
+    padding: 0 20px
+  .toggle-lead
+    margin-top: 20px
+  body,.vacancy-banner p,.advantages-text
+    font-size: 14px
+  h2,.h2-title,.subtitle,.h2-b-title
+    font-size: 18px
+  h1,.title
+    font-size: 26px
+    line-height: 30px
+  .h3-title
+    font-size: 14px
+  .main-banner .title
+    margin: 60% 0 30px 0
+    text-align: center
+  .banner-advantages-container
+    margin-top: 0
+  .link-block-title
+    font-size: 12px
+  .main-about-block-header,.main-about-item:last-of-type
+    border: none
+    padding: 0
+    box-shadow: none
+  .how-work-steps
+    padding: 0
+  //Header
+  .product-menu-title
+    display: flex
+    justify-content: space-between
+    align-items: center
+  .toggle-nav
+    font-size: 14px
+    cursor: pointer
+    display: block
+    width: 20px
+    height: 20px
+    text-align: center
+    line-height: 20px
+  .toggle-nav.active
+    transform: rotate(-180deg)
+  .product-menu-list
+    display: none
+  .product-menu-wrapper
+    &>.grid-container
+      display: block
+  //Main banner
+  .banner-advantages-container
+    &>.grid-container
+      display: block
+  .banner-advantages-item
+    text-align: center
+    grid-template-columns: 1fr
+  .banner-advantages-item:not(:last-of-type)
+    border-right: none
+  //Main about
+  .equipment-list
+    grid-template-columns: repeat(1,1fr)
+  //Catalog
+  .block-slider-container
+    max-width: 100%
+    img
+      width: 100%
+  .catalog-slider
+    .slider-btn
+      display: none !important
+  //History Success
+  .history-success-info
+    font-size: 12px
+  .bold-percent
+    font-size: 36px
+    margin-bottom: 0
+    margin-top: 30px
+    line-height: 40px
+  .history-success-item
+    padding: 0
+    border: 0
+    border-top: 1px solid #e2e2e2
+  .history-success-item:first-of-type
+    border-right-color: #e2e2e2
+  .history-success-header,.history-success-footer,.history-success-item
+    grid-template-columns: 1fr
+    grid-gap: 0px
+  .history-success-text
+    width: 100%
+  .history-success-item
+    text-align: center
+  .history-success-img
+    max-width: 100%
+    img
+      width: 100%
+  //Specialists
+  .specialists-img
+    img
+      width: 100%
+  //About company
+  .about-company-advantages-list-item
+    grid-gap: 10px
+    grid-template-columns: 36px 10px 1fr
+  .about-company-advantages-number
+    text-align: center
+    line-height: 65px
+    font-size: 65px
+  .about-company-info-title
+    margin-bottom: 20px
+    font-size: 36px
+  .about-news-title
+    font-size: 18px
+    margin-bottom: 20px
+  .about-news-content
+    font-size: 12px
+  .about-company
+    .about-company-info-item:last-child
+      order: -1
+  //Vacancy
+  .vacancy-popup-arrow-container
+    display: flex
+    align-content: center
+  .close-popup-vacancy
+    max-width: 20px
+    margin-right: 25px
+  //Contacts
+  .contacts-accordion-toggle
+    width: 15px
+    height: 10px
+    background-size: 100%
+  .contacts-wrapper-main,.contacts-wrapper-footer
+    padding-left: 0
+    padding-right: 0
+  .accordion-item
+    padding-left: 20px
+    padding-right: 20px
+  //Repair
+  .repair-info
+    font-size: 12px
+  .partners-repair-list
+    padding-bottom: 0
+  //Pays
+  .pay-advantages-list-item
+    grid-template-columns: 30px 1fr
+    grid-gap: 30px
+  //Blog
+  .blog-post-list
+    grid-template-columns: 1fr
+  //Services
+  .service-info-price
+    padding: 20px
+  .service-info-content
+    font-size: 14px
+    .bold-percent
+      margin-top: 0
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 794px)
+  //Sertificates
+  .sertificates-gallery
+    display: block
+  //Last news
+  .last-news-list,.blog-grid
+    grid-template-columns: 1fr
+  //Info block
+  .service-info-price-title
+    font-size: 24px
+    line-height: 24px
+  .service-info-title
+    font-size: 12px
+  //Vacancy
+  .vacancy-list-container.active
+    display: block
+  .vacancy-item
+    margin-bottom: 20px
+  .vacancy-item-title
+    font-size: 14px
+@media  only screen and (max-width: 680px)
+  body
+    font-size: 12px
+  .product-menu-container
+    width: 32px
+    height: 32px
+  .youtube .play
+    width: 60px
+    height: 60px
+  .project-gallery .play
+    background-size: 20px
+  .youtube .youtube-text
+    font-size: 14px
+    line-height: 16px
+  //Page banner
+  .page-banner
+    .toggle-lead
+      width: 100%
+    .toggle-lead::after
+      display: none
+  //Video reviews
+  .video-review-video,.video-reviews-list-item iframe
+    height: 165px
+  //How work
+  .how-work-steps
+    display: block
+  .how-work-steps-item
+    grid-template-columns: auto 1fr
+    grid-gap: 20px
+  //Project gallery
+  .project-gallery-main,.advantages-company-item:first-of-type
+    height: 187px
+  .project-gallery .youtube-text
+    margin-top: 10px
+  //Advantages
+  .advantages-company-item .play
+    background-size: 30px
+  .advantages-company-item .youtube-text
+    margin-top: 14px
+    margin-left: 50%
+    max-width: 160px
+  .advantages-number
+    width: 20px
+    height: 20px
+    font-size: 14px
+    line-height: 20px
+    left: -40%
+  .advantages-list-item
+    position: relative
+  .advantages-img
+    position: absolute
+    width: 40px
+    left: 30%
+    top: 55px
+    img
+      width: 100%
+  .advantages-title,.advantages-list-item:first-of-type .advantages-title
+    margin-top: 30px
+    margin-bottom: 25px
+    max-width: 186px
+    text-align: left
+    padding-left: 40%
+  //Footer
+  .footer-item
+    width: 100%
+    .header-contact
+      justify-content: center
+  .copyright
+    display: none
+  .mobile-copyright
+    display: block
+    .copyright
+      display: block
+  .footer-item-first
+    text-align: center
+  //Main about
+  .main-about-footer
+    grid-template-columns: 1fr
+    .btn-link
+      width: 100%
+    .more
+      display: none
+  .main-about
+    grid-template-columns: 100%
+  .link-block
+    grid-template-columns: 125px 1fr
+  .slider-btn
+    width: 18px
+    height: 12px
+    top: 30%
+  .slider-btn-right
+    right: -5%
+  .slider-btn-left
+    left: -5%
+  //Partners page
+  .partners-page-list
+    justify-content: center
+  //Pays
+  .pay-methods-list-item
+    display: flex
+    flex-wrap: wrap
+  .pay-methods-content
+    width: 100%
+  .pay-methods-img
+    margin-right: 17px
+  .pay-methods-title
+    width: 70%
+    margin-top: 0
+/* Extra Small Devices, Phones */
+@media (max-width: 483px)
+  .advantages-img
+    left: 15%
+  .advantages-list-item:first-of-type .advantages-title, .advantages-title
+    padding-left: 30%
+  .advantages-company-item .youtube-text
+    margin-left: 40%
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 375px)
+  .vacancy-popup-item
+    overflow: hidden
+  .header-container
+    grid-template-columns: repeat(3,1fr)
+  .lead-popup-wrapper
+    width: 100%
+  //Own catalog
+  .own-catalog-list
+    grid-template-columns: 1fr
+  //Our clients
+  .our-clients-list
+    grid-template-columns: 100%
+  //Project gallery
+  .project-gallery-list a, .project-gallery-list img
+    min-height: 90px
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+  /**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+  /**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+  /**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+  /**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+  /**/

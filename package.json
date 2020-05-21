@@ -1,0 +1,39 @@
+{
+	"name": "optimizedhtml",
+	"version": "5.0.0",
+	"description": "OptimizedHTML 5 - Start HTML Template",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "WebDesign Master",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.9.6",
+		"@babel/preset-env": "^7.9.6",
+		"@fancyapps/fancybox": "^3.5.7",
+		"browser-sync": "^2.26.7",
+		"del": "^5.1.0",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^7.0.1",
+		"gulp-babel": "^8.0.0-beta.2",
+		"gulp-clean-css": "^4.2.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-imagemin": "^6.1.0",
+		"gulp-newer": "^1.4.0",
+		"gulp-rename": "^1.4.0",
+		"gulp-responsive": "^3.0.1",
+		"gulp-rsync": "0.0.8",
+		"gulp-sass": "^4.1.0",
+		"gulp-uglify-es": "^2.0.0",
+		"jquery": "^3.5.1",
+		"jquery-mask-plugin": "^1.14.16",
+		"js-datepicker": "^5.11.0",
+		"materialize-css": "^1.0.0",
+		"readmore-js": "^2.2.1",
+		"slick-carousel": "^1.8.1",
+		"timepicker": "^1.13.9",
+		"vanilla-lazyload": "^12.5.1"
+	},
+	"dependencies": {}
+}

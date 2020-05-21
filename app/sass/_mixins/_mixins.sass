@@ -1,0 +1,49 @@
+@mixin titleLinear
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)
+  animation: gradientBG 15s ease infinite
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  background-size: 400% 400%
+@mixin font($fontWeight,$fontSize,$lineHeight)
+  font-size: $fontSize
+  font-weight: $fontWeight
+  line-height: $lineHeight
+@mixin backgrounds($url,$color)
+  background: url($url) no-repeat $color
+  background-size: cover
+  background-position: center
+@mixin list-type-none
+  list-style-type: none
+@mixin control-text
+  text-overflow: ellipsis
+  overflow: hidden
+@mixin reset-button
+  border: none
+  outline: none
+@mixin section-margin
+  margin: 0 auto
+  padding: 145px 0
+@mixin button($bgcolor,$color)
+  display: block
+  max-width: 293px
+  width: 100%
+  background: $bgcolor
+  background-size: 100% 100%
+  text-align: center
+  font-size: 14px
+  color: $color
+  border-radius: 5px
+  font-weight: bold
+  cursor: pointer
+@mixin small-btn-color($position)
+  background-image: linear-gradient($position, #a95fa6, #967acb, #7795e6, #4cadf6, #11c4fb)
+@mixin link-visit
+  background: linear-gradient(161.75deg, #F93A3A 2.55%, #A52929 100%)
+  color: #FFFFFF
+  text-align: center
+@mixin link-visit-hover
+  color: #fff
+  background: linear-gradient(187.9deg, #F93A3A 34.39%, #A52929 228.33%)
+@mixin link-visit-active
+  color: #fff
+  background: linear-gradient(177.55deg, #F93A3A -259.65%, #A52929 100%)
