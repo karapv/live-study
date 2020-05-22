@@ -11,144 +11,145 @@
 <body>
 <!-- Header -->
 <header id="header">
-	<div class="container flex-container header-top">
-		<div class="header-item logo">
-			<img data-src="img/icons/logo.svg" class="logo" alt="logo">
-		</div>
-		<div class="grid-container header-item header-contact">
+	<div class="header-top">
+		<div class="container grid-container">
+			<div class="header-item logo">
+				<a href="#"><img data-src="img/icons/logo.svg" class="lazy logo" alt="logo"></a>
+			</div>
+			<div class="flex-container header-item header-contact">
 			<span class="header-title">YOUR #1 EDUCATION AND IMMIGRATION
             CONSULTANT FOR UKRAINE AND EASTERN EUROPE
             </span>
-			<span class="btn btn-popup btn-request">Request an Appointment</span>
+				<a href="#" class="btn btn-popup btn-request">Request an Appointment</a>
+			</div>
+			<ul class="flex-container header-item social-list header-social">
+				<li class="social-list-item"><a href="#" class="fab fa-instagram"></a></li>
+				<li class="social-list-item"><a href="#" class="fab fa-facebook-f"></a></li>
+				<li class="social-list-item"><a href="#" class="fab fa-youtube"></a></li>
+				<li class="social-list-item"><a href="#" class="fab fa-linkedin-in"></a></li>
+			</ul>
 		</div>
-		<ul class="header-item social-list header-social">
-			<li class="fab fa-instagram social-list-item"></li>
-			<li class="fab fa-facebook-f social-list-item"></li>
-			<li class="fab fa-youtube social-list-item"></li>
-			<li class="fab fa-linkedin-in social-list-item"></li>
+	</div>
+	<div class="header-bottom">
+		<ul class="container flex-container header-menu">
+			<li class="header-menu-item"><a href="#">Education Services </a></li>
+			<li class="header-menu-item"><a href="#">Work in Europe</a>
+				<ul class="sub-menu">
+					<li class="sub-menu-item"><a href="#">Ukraine</a>
+						<ul class="sub-menu">
+							<li class="sub-menu-item"><a href="#">About Ukraine</a></li>
+							<li class="sub-menu-item"><a href="#">Application Steps, Required Documents and Visa Process</a></li>
+							<li class="sub-menu-item"><a href="#">Recommended Universities</a></li>
+							<li class="sub-menu-item"><a href="#">Courses and Tuition Fees</a></li>
+							<li class="sub-menu-item"><a href="#">Admission Services and Fees</a></li>
+						</ul>
+					</li>
+					<li class="sub-menu-item"><a href="#">Lithuania (Business Immigration)</a></li>
+					<li class="sub-menu-item"><a href="#">Portugal (Travel visa)</a></li>
+					<li class="sub-menu-item"><a href="#">Spain (Business Immigration)</a></li>
+					<li class="sub-menu-item"><a href="#">Other Immigration Services</a></li>
+					<li class="sub-menu-item"><a href="#">TRP Business</a></li>
+					<li class="sub-menu-item"><a href="#">TRP Work</a></li>
+					<li class="sub-menu-item"><a href="#">TRP Volunteer Work</a></li>
+					<li class="sub-menu-item"><a href="#">TRP Marriage</a></li>
+				</ul>
+			</li>
+			<li class="header-menu-item"><a href="#">Immigration and Visa</a></li>
+			<li class="header-menu-item"><a href="#">For Corporate Clients</a></li>
+			<li class="header-menu-item"><a href="#">Guides</a></li>
+			<li class="header-menu-item"><a href="#">About</a></li>
+			<li class="header-menu-item"><a href="#">Contacts</a></li>
 		</ul>
 	</div>
-	<ul class="container flex-container header-menu">
-		<li class="header-menu-item"><a href="#">Education Services </a></li>
-		<li class="header-menu-item"><a href="#">Work in Europe</a>
-			<ul class="sub-menu">
-				<li class="sub-menu-item"><a href="#">Ukraine</a>
-					<ul class="sub-menu">
-						<li class="sub-menu-item"><a href="#">About Ukraine</a></li>
-						<li class="sub-menu-item"><a href="#">Application Steps, Required Documents and Visa Process</a></li>
-						<li class="sub-menu-item"><a href="#">Recommended Universities</a></li>
-						<li class="sub-menu-item"><a href="#">Courses and Tuition Fees</a></li>
-						<li class="sub-menu-item"><a href="#">Admission Services and Fees</a></li>
-					</ul>
-				</li>
-				<li class="sub-menu-item"><a href="#">Lithuania (Business Immigration)</a></li>
-				<li class="sub-menu-item"><a href="#">Portugal (Travel visa)</a></li>
-				<li class="sub-menu-item"><a href="#">Spain (Business Immigration)</a></li>
-				<li class="sub-menu-item"><a href="#">Other Immigration Services</a></li>
-				<li class="sub-menu-item"><a href="#">TRP Business</a></li>
-				<li class="sub-menu-item"><a href="#">TRP Work</a></li>
-				<li class="sub-menu-item"><a href="#">TRP Volunteer Work</a></li>
-				<li class="sub-menu-item"><a href="#">TRP Marriage</a></li>
-			</ul>
-		</li>
-		<li class="header-menu-item"><a href="#">Immigration and Visa</a></li>
-		<li class="header-menu-item"><a href="#">For Corporate Clients</a></li>
-		<li class="header-menu-item"><a href="#">Guides</a></li>
-		<li class="header-menu-item"><a href="#">About</a></li>
-		<li class="header-menu-item"><a href="#">Contacts</a></li>
-	</ul>
 </header>
 <main id="main">
 	<!-- Main banner -->
-	<section class="lazy main-banner" data-bg="img/_src/main/main-banner/banner-img.jpg">
+	<section class="lazy main-banner" data-bg="url(/img/_src/main/main-banner/banner-img.jpg)">
 		<div class="container">
-			<h1 class="title">Your #1 Education and Immigration expert for Ukraine and Eastern Europe</h1>
-			<span class="btn btn-popup btn-banner">Get free consultation</span>
+			<h1 class="title title-banner">Your #1 Education and Immigration expert for Ukraine and Eastern Europe</h1>
+			<a href="#" class="btn btn-request btn-banner">Get free consultation</a>
 		</div>
 	</section>
 	<!-- Who we are -->
-	<section class="whoweare">
+	<section class="whoweare grey-bg">
 		<div class="container">
-			<h2 class="subtitle">Who we are</h2>
+			<h2 class="subtitle whoweare-title">Who we are</h2>
 			<div class="whoweare-container">
 				<div class="whoweare-item whoweare-content">
 					<h3>Lorem ipsum dolor sit amet</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam </p>
 					<a href="#" class="btn btn-more">About Us  <i class="fas fa-chevron-right"></i></a>
 				</div>
 				<div class="whoweare-item whoweare-img">
-					<img src="img/_src/main/who-we-are/who-we.jpg" alt="who we are">
+					<img data-src="img/_src/main/who-we-are/who-we.jpg" class="lazy" alt="who we are">
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- Our services -->
 	<section class="services">
-		<h2 class="subtitle">OUR SERVICES</h2>
-		<div class="container grid-container services-container">
-			<div class="services-item">
-				<a href="#">
-					<div class="services-img">
-						<img data-src="img/_src/main/our-services/img.jpg" class="lazy" alt="service">
-					</div>
-					<div class="services-content">
-						<h4 class="services-title">EDUCATION SERVICES</h4>
-						<div >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
-					</div>
-				</a>
-			</div>
-			<div class="services-item">
-				<a href="#">
-					<div class="services-img">
-						<img data-src="img/_src/main/our-services/img-2.jpg" class="lazy" alt="service">
-					</div>
-					<div class="services-content">
-						<h4 class="services-title">IMMIGRATION SERVICES</h4>
-						<div class="services-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
-					</div>
-				</a>
-			</div>
-			<div class="services-item">
-				<a href="#">
-					<div class="services-img">
-						<img data-src="img/_src/main/our-services/img-3.jpg" class="lazy" alt="service">
-					</div>
-					<div class="services-content">
-						<h4 class="services-title">WORK IN EUROPE</h4>
-						<div class="services-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
-					</div>
-				</a>
-			</div>
-			<div class="services-item">
-				<a href="#">
-					<div class="services-img">
-						<img data-src="img/_src/main/our-services/img-4.jpg" class="lazy" alt="service">
-					</div>
-					<div class="services-content">
-						<h4 class="services-title">FOR CORPORATE CLIENTS</h4>
-						<div class="services-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
-					</div>
-				</a>
+		<div class="container">
+			<h2 class="subtitle services-subtitle">OUR SERVICES</h2>
+			<div class="grid-container service-container">
+				<div class="services-item">
+						<div class="services-img">
+							<img data-src="img/_src/main/our-services/img.jpg" class="lazy" alt="service">
+						</div>
+						<div class="services-content">
+							<a href="#" class="fas fa-arrow-right btn service-more"></a>
+							<h4 class="services-title">EDUCATION SERVICES</h4>
+							<div class="services-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+						</div>
+				</div>
+				<div class="services-item">
+						<div class="services-img">
+							<img data-src="img/_src/main/our-services/img-2.jpg" class="lazy" alt="service">
+						</div>
+						<div class="services-content">
+							<a href="#" class="fas fa-arrow-right btn service-more"></a>
+							<h4 class="services-title">IMMIGRATION SERVICES</h4>
+							<div class="services-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+						</div>
+				</div>
+				<div class="services-item">
+						<div class="services-img">
+							<img data-src="img/_src/main/our-services/img-3.jpg" class="lazy" alt="service">
+						</div>
+						<div class="services-content">
+							<a href="#" class="fas fa-arrow-right btn service-more"></a>
+							<h4 class="services-title">WORK IN EUROPE</h4>
+							<div class="services-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+						</div>
+				</div>
+				<div class="services-item">
+						<div class="services-img">
+							<img data-src="img/_src/main/our-services/img-4.jpg" class="lazy" alt="service">
+						</div>
+						<div class="services-content">
+							<a href="#" class="fas fa-arrow-right btn service-more"></a>
+							<h4 class="services-title">FOR CORPORATE CLIENTS</h4>
+							<div class="services-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+						</div>
+				</div>
 			</div>
 		</div>
 	</section>
 	<!-- About me -->
-	<section class="about-me">
+	<section class="lazy about-me" data-bg="url(/img/_src/main/about-me/bg.jpg)">
 		<div class="container grid-container about-me-container">
-			<div class="about-me-item">
+			<div class="about-me-item about-me-img">
 				<img data-src="img/_src/main/about-me/Arar.png" class="lazy" alt="Arar">
 			</div>
-			<div class="about-me-item">
+			<div class="about-me-item about-me-content">
                 <h2>Arar Guliyev</h2>
-				<h5>Founder and CEO <br>Live and Study in Europe</h5>
+				<h4>Founder and CEO <br>Live and Study in Europe</h4>
 				<p>Leading high education and immigration expert that works in Ukraine and Eastern European countries since 2013</p>
 				<div class="quote">" Lorem ipsum dolor sit amet, lorem ipsum "</div>
 			</div>
 		</div>
 	</section>
 	<!-- Why choose -->
-	<section class="why-choose">
+	<section class="why-choose grey-bg">
 		<div class="container">
 			<h2 class="why-choose-title">WHY CHOOSE LIVE AND STUDY IN EUROPE?</h2>
 			<div class="why-choose-content">
@@ -157,19 +158,19 @@
 			<ul class="flex-container why-choose-list">
 				<li class="why-choose-item">
 					<div class="why-choose-img">
-						<img data-src="img/_src/main/why-choose/img-1.svg" class="lazy" alt="choose">
+						<img data-src="img/_src/main/why-choose/img-1.png" class="lazy" alt="choose">
 					</div>
 					<h4 class="why-choose-title">#1 Immigration Law Expert for Eastern Europe</h4>
 				</li>
 				<li class="why-choose-item">
 					<div class="why-choose-img">
-						<img data-src="img/_src/main/why-choose/img-2.svg" class="lazy" alt="choose">
+						<img data-src="img/_src/main/why-choose/img-2.png" class="lazy" alt="choose">
 					</div>
 					<h4 class="why-choose-title">100% Guarantee for All Our Commitments</h4>
 				</li>
 				<li class="why-choose-item">
 					<div class="why-choose-img">
-						<img data-src="img/_src/main/why-choose/img-3.svg" class="lazy" alt="choose">
+						<img data-src="img/_src/main/why-choose/img-3.png" class="lazy" alt="choose">
 					</div>
 					<h4 class="why-choose-title">No Hidden Costs</h4>
 				</li>
@@ -179,107 +180,107 @@
 	<!-- Our stories -->
 	<section class="our-stories">
 		<div class="container">
-			<h2 class="subtitle">Our Stories</h2>
+			<h2 class="subtitle out-stories-subtitle">Our Stories</h2>
 			<ul class="video-slider our-stories-list">
 				<li class="video-slider-item our-stories-item">
 					<div class="video-slider-video our-stories-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/4QHFhIjF2L0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 					<div class="video-slider-content our-stories-content">
 						<h4 class="video-slider-title our-stories-title">Work visa to Poland</h4>
-						<div class="video-slider-text our-stories-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut юыавсмч./abore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+						<div class="video-slider-text our-stories-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</div>
 					</div>
 				</li>
 				<li class="video-slider-item our-stories-item">
 					<div class="video-slider-video our-stories-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/4QHFhIjF2L0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 					<div class="video-slider-content our-stories-content">
 						<h4 class="video-slider-title our-stories-title">Work visa to Poland</h4>
-						<div class="video-slider-text our-stories-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut юыавсмч./abore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+						<div class="video-slider-text our-stories-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</div>
 					</div>
 				</li>
 				<li class="video-slider-item our-stories-item">
 					<div class="video-slider-video our-stories-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/4QHFhIjF2L0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 					<div class="video-slider-content our-stories-content">
 						<h4 class="video-slider-title our-stories-title">Work visa to Poland</h4>
-						<div class="video-slider-text our-stories-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut юыавсмч./abore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+						<div class="video-slider-text our-stories-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</div>
 					</div>
 				</li>
 				<li class="video-slider-item our-stories-item">
 					<div class="video-slider-video our-stories-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/4QHFhIjF2L0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 					<div class="video-slider-content our-stories-content">
 						<h4 class="video-slider-title our-stories-title">Work visa to Poland</h4>
-						<div class="video-slider-text our-stories-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut юыавсмч./abore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+						<div class="video-slider-text our-stories-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</div>
 					</div>
 				</li>
 				<li class="video-slider-item our-stories-item">
 					<div class="video-slider-video our-stories-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/4QHFhIjF2L0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 					<div class="video-slider-content our-stories-content">
 						<h4 class="video-slider-title our-stories-title">Work visa to Poland</h4>
-						<div class="video-slider-text our-stories-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut юыавсмч./abore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+						<div class="video-slider-text our-stories-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</div>
 					</div>
 				</li>
 				<li class="video-slider-item our-stories-item">
 					<div class="video-slider-video our-stories-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/4QHFhIjF2L0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 					<div class="video-slider-content our-stories-content">
 						<h4 class="video-slider-title our-stories-title">Work visa to Poland</h4>
-						<div class="video-slider-text our-stories-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut юыавсмч./abore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+						<div class="video-slider-text our-stories-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</div>
 					</div>
 				</li>
 			</ul>
 		</div>
 	</section>
 	<!-- Testimonials -->
-	<section class="testimonials">
+	<section class="lazy testimonials" data-bg="url(img/_src/main/testimonials/bg.jpg)">
 		<div class="container">
-			<h2 class="subtitle testimonials-title">Testimonials</h2>
+			<h2 class="subtitle testimonials-subtitle">Testimonials</h2>
 			<ul class="video-slider testimonials-list">
 				<li class="video-slider-item testimonials-item">
 					<div class="video-slider-video testimonials-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/4QHFhIjF2L0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 					<div class="video-slider-content testimonials-content">
 						<h4 class="video-slider-title testimonials-title">Work visa to Poland</h4>
-						<div class="video-slider-text testimonials-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut юыавсмч./abore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+						<div class="video-slider-text testimonials-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
 					</div>
 				</li>
 				<li class="video-slider-item testimonials-item">
 					<div class="video-slider-video testimonials-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/4QHFhIjF2L0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 					<div class="video-slider-content testimonials-content">
 						<h4 class="video-slider-title testimonials-title">Work visa to Poland</h4>
-						<div class="video-slider-text testimonials-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut юыавсмч./abore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+						<div class="video-slider-text testimonials-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
 					</div>
 				</li>
 				<li class="video-slider-item testimonials-item">
 					<div class="video-slider-video testimonials-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/4QHFhIjF2L0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 					<div class="video-slider-content testimonials-content">
 						<h4 class="video-slider-title testimonials-title">Work visa to Poland</h4>
-						<div class="video-slider-text testimonials-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut юыавсмч./abore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+						<div class="video-slider-text testimonials-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
 					</div>
 				</li>
 				<li class="video-slider-item testimonials-item">
 					<div class="video-slider-video testimonials-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/4QHFhIjF2L0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 					<div class="video-slider-content testimonials-content">
 						<h4 class="video-slider-title testimonials-title">Work visa to Poland</h4>
-						<div class="video-slider-text testimonials-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut юыавсмч./abore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+						<div class="video-slider-text testimonials-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
 					</div>
 				</li>
 				<li class="video-slider-item testimonials-item">
 					<div class="video-slider-video testimonials-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/4QHFhIjF2L0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 					<div class="video-slider-content testimonials-content">
 						<h4 class="video-slider-title testimonials-title">Work visa to Poland</h4>
-						<div class="video-slider-text testimonials-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut юыавсмч./abore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+						<div class="video-slider-text testimonials-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
 					</div>
 				</li>
 				<li class="video-slider-item testimonials-item">
 					<div class="video-slider-video testimonials-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/4QHFhIjF2L0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 					<div class="video-slider-content testimonials-content">
 						<h4 class="video-slider-title testimonials-title">Work visa to Poland</h4>
-						<div class="video-slider-text testimonials-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut юыавсмч./abore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+						<div class="video-slider-text testimonials-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
 					</div>
 				</li>
 			</ul>
 		</div>
 	</section>
 	<!-- How to find us -->
-	<section class="how-find">
+	<section class="how-find grey-bg">
 		<div class="container">
-			<h2 class="subtitle">HOW TO FIND US</h2>
+			<h2 class="subtitle how-find-title">HOW TO FIND US</h2>
 			<ul class="how-find-contacts">
 				<li class="how-find-contact-item"><i class="fas fa-map-marker-alt"></i><span>86b, Kazimir Malevich str., floor 2, office 206, 03150 Kyiv, Ukraine</span></li>
 				<li class="how-find-contact-item"><i class="fas fa-phone-alt"></i><span>Phone/ WhatsApp/ Telegram: <a href="tel:+380683534351">+380683534351</a></span></li>
@@ -293,8 +294,8 @@
 </main>
 <footer id="footer">
 	<div class="container flex-container footer-container">
-		<div class="footer-item footer-logo">
-			<img data-src="img/icons/logo-footer.svg" class="lazy" alt="logo">
+		<div class="footer-item logo">
+			<a href="#"><img data-src="img/icons/logo-footer.svg" class="lazy logo-footer" alt="logo"></a>
 		</div>
 		<div class="footer-item">
 			<ul class="footer-menu">
@@ -323,13 +324,13 @@
 			</ul>
 		</div>
 		<div class="footer-item">
-			<span class="btn btn-popup btn-request">Request an Appointment</span>
+			<a href="#" class="btn btn-popup btn-request">Request an Appointment</a>
 			<div class="social-title">We on socials:</div>
-			<ul class="social-list footer-social">
-				<li class="fab fa-instagram social-list-item"></li>
-				<li class="fab fa-facebook-f social-list-item"></li>
-				<li class="fab fa-youtube social-list-item"></li>
-				<li class="fab fa-linkedin-in social-list-item"></li>
+			<ul class="flex-container social-list footer-social">
+				<li class="social-list-item"><a href="#" class="fab fa-instagram"></a></li>
+				<li class="social-list-item"><a href="#" class="fab fa-facebook-f"></a></li>
+				<li class="social-list-item"><a href="#" class="fab fa-youtube"></a></li>
+				<li class="social-list-item"><a href="#" class="fab fa-linkedin-in"></a></li>
 			</ul>
 		</div>
 	</div>

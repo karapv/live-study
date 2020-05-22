@@ -15,6 +15,42 @@ document.addEventListener("DOMContentLoaded", function() {
             }, 1500);
         });
     };
-
+    //Submenu settings
+    $('.sub-menu').parent().append('<span class="fas fa-chevron-right toggle-btn"></span>');
+    $('.toggle-btn').click(function () {
+        $(this).toggleClass('active');
+        $(this).siblings('.sub-menu').fadeToggle('slow');
+    });
+    //Video slider
+    $('.video-slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        prevArrow: '<span class="fas fa-chevron-left btn slider-btn slider-btn-left"></span>',
+        nextArrow: '<span class="fas fa-chevron-right btn slider-btn  slider-btn-right"></span>',
+        responsive: [
+            {
+                breakpoint: 1250,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                }
+            },
+            {
+                breakpoint: 880,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+        ]
+    })
 });
 
