@@ -51,6 +51,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             },
         ]
+    });
+    //Footer nav
+    $('.footer-menu-item').prepend('<i class="fas fa-plus"></i>');
+    //Header nav
+    $('.toggle-nav').click(function () {
+        $(this).toggleClass('active');
+        $('.header-bottom').fadeToggle('slow');
     })
 });
 

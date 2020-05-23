@@ -1,9 +1,70 @@
 @import "vars"
 /*==========  Desktop First  ==========*/
-@media screen and (min-width: 1190px)
-  /**/
-@media screen and (max-width: 1320px)
-  /**/
+@media screen and (max-width: 1170px)
+  //Header
+  .header-top>.grid-container
+    grid-template-columns: 100%
+  .header-item.logo
+    text-align: center
+    margin: 0 auto
+  .header-title
+    display: none
+  .header-contact,.header-social
+    border: none
+    justify-content: center
+  .toggle-nav
+    width: 40px
+    height: 40px
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    background: transparent
+    border: 2px solid $white
+    border-radius: 3px
+    &.active
+      .toggle-dec:nth-child(1)
+        transform: rotate(-40deg)
+        margin-top: 13px
+      .toggle-dec:nth-child(3)
+        transform: rotate(40deg)
+        margin-top: -25px
+      .toggle-dec:nth-child(2)
+        visibility: hidden
+  .toggle-dec
+    display: block
+    height: 3px
+    width: 80%
+    background: $white
+    transition: all 500ms ease-in-out
+    &:nth-child(2)
+      margin: 4px 0
+  .sub-menu li
+    padding: 5px
+  .header-menu-item, .sub-menu li
+    width: 100%
+    display: block
+    position: relative
+    margin-bottom: 5px
+  .toggle-btn
+    position: absolute
+    right: 0
+    top: 0
+  .header-menu-item a, .sub-menu li a
+    display: block
+  .header-menu-item span, .sub-menu li span
+    width: auto
+    line-height: 24px
+    text-align: center
+  .sub-menu
+    position: static
+    width: 100%
+    border: none
+    background: inherit
+  .sub-menu li .sub-menu
+    position: static
+  .header-bottom
+    display: none
 @media screen and (max-width: 1280px)
   /**/
 /* Large Devices, Wide Screens */
@@ -16,10 +77,31 @@
   /**/
 /* Small Devices, Tablets */
 @media only screen and (max-width : 880px)
-  /**/
+  .service-container
+    grid-template-columns: 100%
+  .whoweare-img
+    display: none
+  .about-me
+    padding-top: 0
+  .about-me-img
+    display: none
+  .about-me-container
+    grid-template-columns: 100%
+  .about-me-content
+    padding: 40px 0
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 794px)
-  /**/
+  .footer-item
+    width: 100%
+    &:not(:last-child)
+      margin-bottom: 30px
+  .logo
+    margin: 0 auto
+  .btn-banner
+    max-width: 300px
+    font-size: 18px
+  .main-banner
+    padding: 40px 0
 @media  only screen and (max-width: 680px)
   /**/
 /* Extra Small Devices, Phones */
@@ -27,7 +109,10 @@
   /**/
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 375px)
-  /**/
+  .h2-title, h2
+    font-size: 22px
+  .h1-title, h1
+    font-size: 32px
 /*==========  Mobile First  ==========*/
 
 /* Custom, iPhone Retina */
