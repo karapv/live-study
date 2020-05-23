@@ -2,7 +2,7 @@
 /*==========  Desktop First  ==========*/
 @media screen and (max-width: 1170px)
   //Header
-  .header-top>.grid-container
+  .header-top>.grid-container,.contact-us-content
     grid-template-columns: 100%
   .header-item.logo
     text-align: center
@@ -102,8 +102,15 @@
     font-size: 18px
   .main-banner
     padding: 40px 0
+  .btn
+    padding: 14px
+  //Contact us
+  .contact-form>.grid-container
+    grid-template-columns: 100%
 @media  only screen and (max-width: 680px)
-  /**/
+  //Contact us
+  .contact-us-content .youtube, .contact-us-content iframe
+    height: 200px
 /* Extra Small Devices, Phones */
 @media (max-width: 483px)
   /**/
