@@ -17,10 +17,9 @@ input, textarea
 ::-webkit-scrollbar-track
   background: $white
 ::-webkit-scrollbar-thumb
-  background: #00542C
+  background: #ffdd00
 ::-webkit-scrollbar-thumb:hover
   background: #555
-
 *
   margin: 0
   padding: 0
@@ -39,7 +38,7 @@ body
   color: $black
   background-color: $white
   font-family: 'Montserrat', sans-serif
-  @include font(400,14px,24px)
+  @include font(500,14px,24px)
   a:hover
     color: #38a5dd
 //Titles
@@ -59,7 +58,7 @@ h1,h2,h3,h4,h5,.h1-title,.h2-b-title,.h3-title,.h4-title,.h5-title,blockquote,p
 h1,.h1-title
   @include font(700,42px,50px)
   color: $black
-h2,.h2-title
+h2,.h2-title,.subtitle
   @include font(600,30px,28px)
   color: $black
 h3,.h3-title
@@ -284,7 +283,7 @@ img
   margin-top: 88px
 .services-subtitle
   margin-bottom: 60px
-.service-container
+.services-container
   grid-template-columns: repeat(2,1fr)
   grid-template-rows: 1fr
   grid-gap: 30px
@@ -484,7 +483,6 @@ img
 .contact-us-forms
   margin: 45px 0
   max-width: 810px
-  background-color: #f8f8f8
   padding: 30px
 .contact-us-forms-text
   font-weight: 500
@@ -520,4 +518,121 @@ img
   padding-top: 26px
 .contact-us-details-title
   margin-bottom: 43px
+//Service
+.service-subtitle
+  margin-bottom: 55px
+.service-container
+  grid-gap: 30px
+  grid-template-columns: 1fr 2fr
+  grid-template-rows: 1fr
+.service-youtube
+  height: 202px
+  margin-bottom: 75px
+  .youtube,iframe
+    height: 100%
+.search-inputs
+  grid-template-columns: 5fr 1fr
+  grid-template-rows: 1fr
+  grid-gap: 10px
+.search-btn
+  background: transparent
+.service-nav-item
+  border-bottom: 2px solid #e2e2e2
+  &:first-child
+    border-top: 2px solid #e2e2e2
+  *
+    text-decoration: none
+    color: $black
+  a
+    display: block
+    width: 80%
+  &>a
+    font-size: 18px
+.service-nav-item,.service-submenu-item
+  position: relative
+  a
+    padding: 10px 0
+  .toggle-btn
+    position: absolute
+    top: 5px
+    right: 0
+.service-submenu
+  padding-left: 2%
+  display: none
+.service-contact
+  margin-top: 61px
+  padding: 20px
+  i
+    margin-right: 10px
+  a
+    color: $black
+table
+  margin-top: 65px
+  width: 100%
+  border-collapse: collapse
+  margin-bottom: 30px
+  tr:first-child
+    background-color: #38a5dd
+    font-size: 16px
+    color: $white
+  tr
+    td:last-child
+      padding-right: 30px
+    td:first-child
+      padding-left: 30px
+td
+  padding: 15px 0
+tr
+  &:nth-child(odd)
+    background-color: #f8f8f8
+.service-advantages
+  margin: 42px 0 30px 0
+  grid-template-columns: repeat(auto-fit,minmax(288px,320px))
+  grid-template-rows: 1fr
+  grid-gap: 30px
+.service-advantages-item
+  grid-template-columns: 40px 1fr
+  grid-template-rows: 1fr
+  grid-gap: 20px
+.service-advantages-number
+  color: $white
+  text-align: center
+  height: 40px
+  line-height: 40px
+  background-color: #38a5dd
+  border-radius: 6px
+.testimonials.is-service
+  .subtitle
+    color: $black
+.service-comments
+  padding: 48px 0 91px 0
+.service-comments-title
+  margin-bottom: 61px
+.service-content
+  overflow: hidden
+//Blog
+.blog-container
+  grid-template-columns: repeat(auto-fit,minmax(300px,320px))
+  margin-bottom: 55px
+  .service-more
+    width: 50px
+    height: 50px
+    line-height: 50px
+    font-size: 16px
+    top: 0
+    right: 0
+  .services-item
+    position: relative
+//Not found
+.not-found
+  padding-bottom: 50px
+  text-align: center
+.not-found-title
+  font-size: 8rem
+  margin-bottom: 60px
+.not-found-btn
+  color: $black
+  text-decoration: none
+  display: block
+  margin: 30px auto
 @import 'media'

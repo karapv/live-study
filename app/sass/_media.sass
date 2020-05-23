@@ -77,8 +77,15 @@
   /**/
 /* Small Devices, Tablets */
 @media only screen and (max-width : 880px)
-  .service-container
+  .services-container
     grid-template-columns: 100%
+    .service-more
+      top: 0
+      width: 20px
+      height: 20px
+      line-height: 20px
+      font-size: 16px
+      right: 0
   .whoweare-img
     display: none
   .about-me
@@ -116,10 +123,16 @@
   /**/
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 375px)
-  .h2-title, h2
+  .h2-title, h2,.subtitle
     font-size: 22px
   .h1-title, h1
     font-size: 32px
+  //Table
+  table
+    display: block
+    overflow: scroll
+  tbody
+    width: 500px
 /*==========  Mobile First  ==========*/
 
 /* Custom, iPhone Retina */

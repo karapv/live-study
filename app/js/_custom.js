@@ -16,11 +16,14 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     };
     //Submenu settings
-    $('.sub-menu').parent().append('<span class="fas fa-chevron-right toggle-btn"></span>');
-    $('.toggle-btn').click(function () {
-        $(this).toggleClass('active');
-        $(this).siblings('.sub-menu').fadeToggle('slow');
-    });
+    const submenuToggle = (button,item)=>{
+        $(item).parent().append('<span class="fas fa-chevron-right toggle-btn"></span>');
+        $(button).click(function () {
+            $(this).toggleClass('active');
+            $(this).siblings(item).fadeToggle('slow');
+        });
+    };
+    submenuToggle('.toggle-btn','.sub-menu');
     //Video slider
     $('.video-slider').slick({
         infinite: true,
@@ -121,6 +124,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             }
         })();
+    }
+    //Service nav
+    if($('.service-submenu').length>0) {
+        submenuToggle('.toggle-btn', '.service-submenu');
+    }
+    //Service number
+    if($('.service-advantages-number').length>0){
+        const serviceNumber = document.querySelectorAll('.service-advantages-number');
+        let count = serviceNumber.length;
+        for(let i = 0;i<=count;i++){
+            serviceNumber[i].textContent = i+1;
+        }
     }
 });
 
