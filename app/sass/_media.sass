@@ -7,9 +7,12 @@
   .header-item.logo
     text-align: center
     margin: 0 auto
-  .header-title
-    display: none
-  .header-contact,.header-social
+  .header-contact
+    border: none
+    text-align: center
+    .btn-request
+      display: none
+  .header-social
     border: none
     justify-content: center
   .toggle-nav
@@ -22,12 +25,15 @@
     background: transparent
     border: 2px solid $white
     border-radius: 3px
+    position: absolute
+    top: 0
+    left: 25px
     &.active
       .toggle-dec:nth-child(1)
-        transform: rotate(-40deg)
+        transform: rotate(-45deg)
         margin-top: 13px
       .toggle-dec:nth-child(3)
-        transform: rotate(40deg)
+        transform: rotate(45deg)
         margin-top: -25px
       .toggle-dec:nth-child(2)
         visibility: hidden
@@ -37,6 +43,7 @@
     width: 80%
     background: $white
     transition: all 500ms ease-in-out
+    border-radius: 3px
     &:nth-child(2)
       margin: 4px 0
   .sub-menu li
@@ -69,7 +76,8 @@
   /**/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1190px)
-  /**/
+  .service-container
+    grid-template-columns: 100%
 @media only screen and (max-width: 1045px)
   /**/
 /* Medium Devices, Desktops */
@@ -88,6 +96,26 @@
       right: 0
   .whoweare-img
     display: none
+  .breadcrumbs
+    padding-top: 45px
+    padding-bottom: 45px
+  section[class]
+    padding-top: 25px
+    padding-bottom: 25px
+    margin: 0
+  .testimonials
+    height: 440px
+  .slider-btn-right
+    right: 0
+  .slider-btn-left
+    left: 0
+    margin-left: 0
+  textarea.contact-form-input:last-child
+    margin-bottom: 0
+  .video-slider-content, .video-slider-video
+    padding: 10px 0
+  .whoweare-title
+    margin-bottom: 60px
   .about-me
     padding-top: 0
   .about-me-img
@@ -118,6 +146,15 @@
   //Contact us
   .contact-us-content .youtube, .contact-us-content iframe
     height: 200px
+  //Table
+  table
+    display: block
+    overflow: scroll
+  tbody
+    width: 600px
+    display: table
+    tr
+      width: 100%
 /* Extra Small Devices, Phones */
 @media (max-width: 483px)
   /**/
@@ -127,12 +164,6 @@
     font-size: 22px
   .h1-title, h1
     font-size: 32px
-  //Table
-  table
-    display: block
-    overflow: scroll
-  tbody
-    width: 500px
 /*==========  Mobile First  ==========*/
 
 /* Custom, iPhone Retina */

@@ -42,8 +42,8 @@ document.addEventListener("DOMContentLoaded", function() {
             {
                 breakpoint: 880,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
                 }
             },
             {
@@ -128,6 +128,13 @@ document.addEventListener("DOMContentLoaded", function() {
     //Service nav
     if($('.service-submenu').length>0) {
         submenuToggle('.toggle-btn', '.service-submenu');
+    }
+    if($('.service-nav').length>0){
+        let currentUrl = document.location.href,
+            currentItem = $(`.service-nav a[href="${currentUrl}"]`);
+        currentItem.addClass('active');
+        $('.service-nav a.active').parent('li').addClass('active').parent('ul').addClass('active').parent('li').addClass('active').parent('ul').addClass('active').parent('li').addClass('active').parent('ul').addClass('active');
+
     }
     //Service number
     if($('.service-advantages-number').length>0){
