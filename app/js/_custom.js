@@ -20,8 +20,20 @@ document.addEventListener("DOMContentLoaded", function() {
         $(item).parent().append('<span class="fas fa-chevron-right toggle-btn"></span>');
         $(button).click(function () {
             $(this).toggleClass('active');
-            $(this).siblings(item).fadeToggle('slow');
+            $(this).siblings(item).fadeToggle('fast');
         });
+        if($(window).width() > 990 && item === '.sub-menu') {
+            $(item).parent().addClass('itsSubmenu');
+            $('.itsSubmenu').mouseenter(function () {
+                $(this).addClass('active');
+                $(this).children(item).fadeIn('fast');
+            });
+            let parentClick = $(item).parent();
+            parentClick.mouseleave(function () {
+               $(this).removeClass('active');
+               $(this).find(item).fadeOut('fast');
+            });
+        }
     };
     submenuToggle('.toggle-btn','.sub-menu');
     //Video slider
@@ -136,13 +148,66 @@ document.addEventListener("DOMContentLoaded", function() {
         $('.service-nav a.active').parent('li').addClass('active').parent('ul').addClass('active').parent('li').addClass('active').parent('ul').addClass('active').parent('li').addClass('active').parent('ul').addClass('active');
 
     }
-    //Service number
-    if($('.service-advantages-number').length>0){
-        const serviceNumber = document.querySelectorAll('.service-advantages-number');
-        let count = serviceNumber.length;
-        for(let i = 0;i<=count;i++){
-            serviceNumber[i].textContent = i+1;
-        }
+    //Table button
+    if($('.service-content table').length>0){
+        $('.service-content table').append(`
+        <tr>
+           <td></td>
+           <td><button class="btn  btn-table-popup" data-package="Start">Order</button></td>
+           <td><button class="btn  btn-table-popup" data-package="Start+">Order</button></td>
+           <td><button class="btn  btn-table-popup" data-package="Standart">Order</button></td>
+           <td><button class="btn  btn-table-popup" data-package="VIP">Order</button></td>
+        </tr>
+        `);
+        $('.service-content table').after(`<span class="mobile-table-message">Rotate your device to see all table</span>`);
     }
+    //Service number
+    const listCount = (item) =>{
+        if($(item).length>0){
+            if(item === '.list-page-list.page-list-v2 .list-page-type'){
+                $(item).each(function () {
+                    $(this).addClass('fas fa-chevron-right');
+                })
+            }
+            else if(item === '.list-page-list.page-list-v3 .list-page-type'){
+                $(item).each(function () {
+                    $(this).addClass('fas fa-check');
+                })
+            }
+            else {
+                let count = 0;
+                $(item).each(function () {
+                    count += 1;
+                    $(this).text(count);
+                })
+            }
+        }
+    };
+    listCount('.service-advantages-number');
+    listCount('.list-page-list.page-list-v1 .list-page-type');
+    listCount('.list-page-list.page-list-v2 .list-page-type');
+    listCount('.list-page-list.page-list-v3 .list-page-type');
+    //Popup
+    const togglePopup = (button,item) =>{
+        if($(button).length>0){
+            $(button).click(function () {
+                $(item).fadeIn(500);
+            });
+            $('.popup-close').click(function () {
+                $(this).parent().parent().parent().fadeOut(500);
+            });
+            $(item).on( 'wpcf7submit', function( event ) {
+               $(this).fadeOut(500);
+            });
+        }
+    };
+    togglePopup('.btn-table-popup','.popup-order');
+    if($('.btn-table-popup').length>0){
+        $('.btn-table-popup').click(function () {
+            let currentPackage = $(this).attr('data-package');
+            $('.popup-package').val(currentPackage);
+        })
+    }
+    togglePopup('.btn-request','.popup-consult');
 });
 

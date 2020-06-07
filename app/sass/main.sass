@@ -23,11 +23,19 @@ input, textarea
 *
   margin: 0
   padding: 0
-ul
-  list-style-type: none
+ul:not([class]),ol:not([class])
+  list-style-position: inside
+  li
+    margin-bottom: 15px
 button
   @include reset-button
   cursor: pointer
+blockquote
+  margin: 10px 0
+  background-color: #f8f8f8
+  padding: 10px 20px
+  font-style: italic
+  border-left: 3px solid #950c0c
 body
   min-width: 320px
   max-width: 1980px
@@ -41,6 +49,30 @@ body
   @include font(500,14px,24px)
   a:hover
     color: #38a5dd
+  table
+    margin-top: 65px
+    width: 100%
+    height: auto
+    border-collapse: collapse
+    margin-bottom: 30px
+    tr:first-child
+      background-color: #38a5dd
+      font-size: 16px
+      color: $white
+  tr
+    td:last-child
+      padding-right: 30px
+    td:first-child
+      padding-left: 30px
+  td
+    padding: 15px 0
+    &:not(:first-child)
+      text-align: center
+  tr
+    &:nth-child(odd)
+      background-color: #f8f8f8
+#main
+  min-height: 800px
 //Titles
 h1,h2,h3,h4,h5,.h1-title,.h2-b-title,.h3-title,.h4-title,.h5-title,blockquote,p
   margin-bottom: 10px
@@ -100,7 +132,7 @@ img
   max-width: 1500px
   margin: 0 auto
 .container
-  max-width: 1380px
+  max-width: 1140px
   padding: 0 30px
   margin: 0 auto
   position: relative
@@ -115,6 +147,7 @@ img
   padding: 16px
   max-width: 215px
   cursor: pointer
+  font-weight: bold
 .btn-request
   color: #222222
   font-size: 14px
@@ -167,9 +200,11 @@ img
   text-transform: uppercase
   color: $white
   max-width: 500px
+  margin: 0 auto
 .social-list
   align-items: center
   justify-content: flex-start
+  @include list-type-none
 .social-list-item
   margin-right: 10px
   a
@@ -188,7 +223,7 @@ img
       color: $white
 .header-bottom
   background-color: #f8f8f8
-  padding: 20px 0
+  padding: 5px 0
 .header-menu
   justify-content: flex-start
   a
@@ -205,14 +240,17 @@ img
   justify-content: space-between
   align-items: center
   a
-    width: 95%
+    width: 97%
   span
     width: 5%
 .sub-menu
-  top: 65px
+  li
+    a
+      font-weight: 500
+.sub-menu
+  top: 44px
   position: absolute
   border-radius: 0 0 6px 6px
-  border: 2px solid #e9e9e9
   background-color: #f8f8f8
   width: 250px
   display: none
@@ -220,10 +258,8 @@ img
     padding: 5px 15px
     position: relative
     margin-right: 0
-    &:hover
-      background-color: #e9e9e9
     .sub-menu
-      right: -254px
+      right: -250px
       top: -2px
 .toggle-btn
   color: #222222
@@ -315,6 +351,10 @@ img
 .services-text
   font-size: 14px
   font-weight: 600
+.services-title
+  a
+    text-decoration: none
+    color: $black
 //About me
 .about-me
   background-size: cover
@@ -354,6 +394,7 @@ img
   text-align: center
 .why-choose-list
   justify-content: space-around
+  @include list-type-none
 .why-choose-item
   max-width: 250px
   text-align: center
@@ -369,7 +410,7 @@ img
 .video-slider
   position: relative
 .video-slider-video,.video-slider-content
-  padding: 0 50px
+  padding: 0 20px
 .video-slider-video
   margin-bottom: 13px
   height: 202px
@@ -394,12 +435,12 @@ img
   text-align: center
   line-height: 35px
 .slider-btn-right
-  right: 2.2%
+  right: 1.7%
   background-color: #ffdd00
   border-radius: 6px 0 0 6px
 .slider-btn-left
   background-color: $black
-  margin-left: 2.2%
+  left: 1.7%
   border-radius: 0 6px 6px 0
 //Testimonials
 .testimonials
@@ -426,6 +467,7 @@ img
     text-decoration: none
 .how-find-contacts
   margin-bottom: 30px
+  @include list-type-none
 .how-find-map
   iframe
     width: 100%
@@ -434,6 +476,8 @@ img
 #footer
   background-color: #6a7680
   padding-top: 61px
+.footer-menu
+  @include list-type-none
 .footer-menu-item
   *
     color: $white
@@ -457,9 +501,9 @@ img
   padding: 15px 0
 //Breadcrumbs
 .breadcrumbs
-  padding-top: 45px
-  padding-bottom: 60px
+  padding-top: 25px
   justify-content: flex-start
+  @include list-type-none
   *
     color: $black
     font-weight: 500
@@ -480,7 +524,7 @@ img
   border-bottom: 2px solid #e9e9e9
   iframe,.youtube
     width: 100%
-    height: 379px
+    height: 303px
 .contact-us-forms
   margin: 45px 0
   max-width: 810px
@@ -512,6 +556,7 @@ img
     border: 2px solid #d5d5d5
 .btn-submit
   min-width: 125px
+  font-weight: bold
   &:hover,&:focus,&:active
     border: 2px solid #fd0
 .contact-us-details
@@ -520,6 +565,8 @@ img
 .contact-us-details-title
   margin-bottom: 43px
 //Service
+.service,.contact-us
+  margin-top: 40px
 .service-subtitle
   margin-bottom: 55px
 .service-container
@@ -539,6 +586,7 @@ img
 .search-btn
   background: transparent
 .service-nav
+  @include list-type-none
   a.active
     color: #38a5dd
 .service-nav-item
@@ -566,10 +614,13 @@ img
 .service-submenu
   padding-left: 8%
   display: none
+  @include list-type-none
   ul
     padding-left: 7%
 .service-submenu.active
   display: block
+.service-contact-list
+  @include list-type-none
 .service-contact
   margin-top: 61px
   padding: 20px
@@ -577,25 +628,6 @@ img
     margin-right: 10px
   a
     color: $black
-table
-  margin-top: 65px
-  width: 100%
-  border-collapse: collapse
-  margin-bottom: 30px
-  tr:first-child
-    background-color: #38a5dd
-    font-size: 16px
-    color: $white
-  tr
-    td:last-child
-      padding-right: 30px
-    td:first-child
-      padding-left: 30px
-td
-  padding: 15px 0
-tr
-  &:nth-child(odd)
-    background-color: #f8f8f8
 .service-advantages
   margin: 42px 0 30px 0
   grid-template-columns: repeat(auto-fit,minmax(288px,320px))
@@ -616,15 +648,14 @@ tr
   .subtitle
     color: $black
 .service-comments
-  padding: 48px 0 91px 0
-.service-comments-title
-  margin-bottom: 61px
+  padding: 45px 0
 .service-content
   overflow: hidden
 //Blog
 .blog-container
   grid-template-columns: repeat(auto-fit,minmax(300px,320px))
   margin-bottom: 55px
+  justify-content: start
   .service-more
     width: 50px
     height: 50px
@@ -646,4 +677,94 @@ tr
   text-decoration: none
   display: block
   margin: 30px auto
+.btn-load-more
+  margin: 20px auto
+  color: $black
+  display: block
+  font-weight: bold
+.service-form
+  padding-top: 40px
+.service
+  margin-bottom: 20px
+//Popup
+.popup
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  z-index: 4
+  display: none
+.popup-wrapper
+  width: 100%
+  height: 100%
+  justify-content: center
+  align-items: center
+.popup-container
+  background: #FFFFFF
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2)
+  border-radius: 3px
+  padding: 30px
+  position: relative
+.popup-input
+  display: block
+  width: -webkit-fill-available
+  padding: 20px 25px
+  border: 1px solid #d6d4d4
+  border-radius: 5px
+  margin-bottom: 20px
+  &:focus,&:hover
+    border: 1px solid #d6d4d4
+.btn-submit-popup
+  width: 100%
+  display: block
+  max-width: 100%
+  font-weight: bold
+.popup-close
+  position: absolute
+  right: 15px
+  top: 10px
+  cursor: pointer
+  font-size: 18px
+.mobile-table-message
+  display: none
+  text-align: center
+  margin-bottom: 30px
+  font-weight: bold
+  color: #a9a3a3
+//Info pages
+.info-page,.list-page
+  margin: 40px 0 20px 0
+.info-page-content,.list-page-content
+  margin: 25px 0
+.info-page-container
+  margin-bottom: 30px
+.list-page-list
+  grid-template-columns: repeat(2,1fr)
+  grid-template-rows: 1fr
+  grid-gap: 20px
+  align-items: center
+  &.page-list-v1
+    .list-page-type
+      color: $white
+      background-color: #38a5dd
+  &.page-list-v2
+    .list-page-type
+      color: $white
+      background-color: #950c0c
+      font-size: 18px
+  &.page-list-v3
+    .list-page-type
+      background-color: #f8f8f8
+      color: $black
+      font-size: 18px
+.list-page-item
+  grid-template-rows: 1fr
+  grid-template-columns: 40px 1fr
+  grid-gap: 20px
+.list-page-type
+  text-align: center
+  height: 40px
+  line-height: 40px
+  border-radius: 6px
 @import 'media'

@@ -18,10 +18,7 @@
   .toggle-nav
     width: 40px
     height: 40px
-    display: flex
-    flex-wrap: wrap
-    justify-content: center
-    align-items: center
+    display: block
     background: transparent
     border: 2px solid $white
     border-radius: 3px
@@ -31,10 +28,10 @@
     &.active
       .toggle-dec:nth-child(1)
         transform: rotate(-45deg)
-        margin-top: 13px
+        margin-top: -1px
       .toggle-dec:nth-child(3)
         transform: rotate(45deg)
-        margin-top: -25px
+        margin-top: -14px
       .toggle-dec:nth-child(2)
         visibility: hidden
   .toggle-dec
@@ -44,10 +41,13 @@
     background: $white
     transition: all 500ms ease-in-out
     border-radius: 3px
+    margin: 0 auto
     &:nth-child(2)
-      margin: 4px 0
+      margin: 4px auto
+  .sub-menu
+    padding-left: 3%
   .sub-menu li
-    padding: 5px
+    padding: 5px 0
   .header-menu-item, .sub-menu li
     width: 100%
     display: block
@@ -78,6 +78,10 @@
 @media only screen and (max-width : 1190px)
   .service-container
     grid-template-columns: 100%
+  .service-youtube
+    margin-bottom: 0
+  .service-search-container,.service-nav,.service-contact
+    display: none
 @media only screen and (max-width: 1045px)
   /**/
 /* Medium Devices, Desktops */
@@ -85,6 +89,10 @@
   /**/
 /* Small Devices, Tablets */
 @media only screen and (max-width : 880px)
+  .container
+    padding: 0 15px
+  .social-list
+    margin-bottom: 15px
   .services-container
     grid-template-columns: 100%
     .service-more
@@ -103,8 +111,6 @@
     padding-top: 25px
     padding-bottom: 25px
     margin: 0
-  .testimonials
-    height: 440px
   .slider-btn-right
     right: 0
   .slider-btn-left
@@ -143,6 +149,8 @@
   .contact-form>.grid-container
     grid-template-columns: 100%
 @media  only screen and (max-width: 680px)
+  .mobile-table-message
+    display: block
   //Contact us
   .contact-us-content .youtube, .contact-us-content iframe
     height: 200px
@@ -150,11 +158,18 @@
   table
     display: block
     overflow: scroll
+    height: 600px !important
   tbody
     width: 600px
     display: table
     tr
       width: 100%
+@media screen and (orientation: portrait) and (max-width: 680px)
+  .mobile-table-message
+    display: block
+@media screen and (orientation: landscape) and (max-device-width: 900px)
+  .mobile-table-message
+    display: none
 /* Extra Small Devices, Phones */
 @media (max-width: 483px)
   /**/
