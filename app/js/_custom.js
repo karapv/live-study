@@ -163,10 +163,24 @@ document.addEventListener("DOMContentLoaded", function() {
         for(let i = 0;i<currentPackages.length;i++){
             $('.table-buttons').append(currentPackages[i]);
         }
-        $('.service-content table tbody').append(`<span class="mobile-table-message">Rotate your device to see all table</span>`);
-        setTimeout(()=>{
-            $('.mobile-table-message').fadeOut('fast');
-        },3000)
+        let count = 0;
+        $(window).scroll(function(){
+                let wt = $(window).scrollTop();
+                let wh = $(window).height();
+                let et = $('.service-content table tbody').offset().top;
+                let eh = $('.service-content table tbody').outerHeight();
+                let dh = $(document).height();
+                if (wt + wh >= et || wh + wt == dh || eh + et < wh) {
+                    count+=1;
+                    if(count === 1) {
+                        $('.service-content table tbody').append(`<span class="mobile-table-message">Rotate your device to see all table <img src="/wp-content/themes/study/img/icons/rotation.webp" alt="rotation" class="rotation-img"></span>`);
+                        setTimeout(() => {
+                            $('.mobile-table-message').fadeOut('fast');
+                        }, 3000);
+                    }
+                }
+        });
+
     }
     //Service number
     const listCount = (item) =>{
