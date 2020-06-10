@@ -150,16 +150,23 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     //Table button
     if($('.service-content table').length>0){
-        $('.service-content table').append(`
-        <tr>
+        const currentTr = $('.service-content table tr:first-child td:not(:first-child)'),
+              currentPackages = [];
+        currentTr.each(function () {
+            currentPackages.push(`<td><button class="btn  btn-table-popup" data-package="${$(this).text()}">Order</button></td>`);
+        });
+        $('.service-content table tbody').append(`
+        <tr class="table-buttons">
            <td></td>
-           <td><button class="btn  btn-table-popup" data-package="Start">Order</button></td>
-           <td><button class="btn  btn-table-popup" data-package="Start+">Order</button></td>
-           <td><button class="btn  btn-table-popup" data-package="Standart">Order</button></td>
-           <td><button class="btn  btn-table-popup" data-package="VIP">Order</button></td>
         </tr>
         `);
-        $('.service-content table').after(`<span class="mobile-table-message">Rotate your device to see all table</span>`);
+        for(let i = 0;i<currentPackages.length;i++){
+            $('.table-buttons').append(currentPackages[i]);
+        }
+        $('.service-content table tbody').append(`<span class="mobile-table-message">Rotate your device to see all table</span>`);
+        setTimeout(()=>{
+            $('.mobile-table-message').fadeOut('fast');
+        },3000)
     }
     //Service number
     const listCount = (item) =>{
@@ -192,12 +199,18 @@ document.addEventListener("DOMContentLoaded", function() {
         if($(button).length>0){
             $(button).click(function () {
                 $(item).fadeIn(500);
+                if($(item).find('.currentPage')){
+                    $(item).find('.currentPage').val(window.location.href);
+                }
             });
             $('.popup-close').click(function () {
                 $(this).parent().parent().parent().fadeOut(500);
             });
-            $(item).on( 'wpcf7submit', function( event ) {
-               $(this).fadeOut(500);
+            $(item).on( 'wpcf7mailsent', ()=> {
+               $(this).find('.popup-form').fadeOut('fast').find('.thx-text').fadeOut('fast');
+               setTimeout(()=> {
+                   $(this).fadeOut('fast')
+               },1000)
             });
         }
     };

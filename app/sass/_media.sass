@@ -102,6 +102,11 @@
       line-height: 20px
       font-size: 16px
       right: 0
+  .blog-container
+    .service-more
+      top: -30px
+      right: 0
+      z-index: 1
   .whoweare-img
     display: none
   .breadcrumbs
@@ -130,6 +135,9 @@
     grid-template-columns: 100%
   .about-me-content
     padding: 40px 0
+  //Info pages
+  .list-page-list
+    grid-template-columns: 100%
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 794px)
   .footer-item
@@ -143,14 +151,12 @@
     font-size: 18px
   .main-banner
     padding: 40px 0
-  .btn
+  .btn:not(.btn-table-popup)
     padding: 14px
   //Contact us
   .contact-form>.grid-container
     grid-template-columns: 100%
 @media  only screen and (max-width: 680px)
-  .mobile-table-message
-    display: block
   //Contact us
   .contact-us-content .youtube, .contact-us-content iframe
     height: 200px
@@ -166,7 +172,7 @@
       width: 100%
 @media screen and (orientation: portrait) and (max-width: 680px)
   .mobile-table-message
-    display: block
+    display: flex
 @media screen and (orientation: landscape) and (max-device-width: 900px)
   .mobile-table-message
     display: none

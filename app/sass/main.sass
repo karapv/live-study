@@ -30,12 +30,6 @@ ul:not([class]),ol:not([class])
 button
   @include reset-button
   cursor: pointer
-blockquote
-  margin: 10px 0
-  background-color: #f8f8f8
-  padding: 10px 20px
-  font-style: italic
-  border-left: 3px solid #950c0c
 body
   min-width: 320px
   max-width: 1980px
@@ -47,6 +41,12 @@ body
   background-color: $white
   font-family: 'Montserrat', sans-serif
   @include font(500,14px,24px)
+  blockquote
+    margin: 10px 0
+    background-color: #f8f8f8
+    padding: 10px 20px !important
+    font-style: italic
+    border-left: 3px solid #38a5dd
   a:hover
     color: #38a5dd
   table
@@ -55,6 +55,7 @@ body
     height: auto
     border-collapse: collapse
     margin-bottom: 30px
+    position: relative
     tr:first-child
       background-color: #38a5dd
       font-size: 16px
@@ -341,7 +342,7 @@ img
   text-decoration: none
   position: absolute
   right: 30px
-  top: -40px
+  top: -30px
   width: 70px
   height: 70px
   padding: 0
@@ -352,6 +353,9 @@ img
   font-size: 14px
   font-weight: 600
 .services-title
+  margin-bottom: 10px
+  display: block
+  text-decoration: none
   a
     text-decoration: none
     color: $black
@@ -661,8 +665,9 @@ img
     height: 50px
     line-height: 50px
     font-size: 16px
-    top: 0
-    right: 0
+    top: -30px
+    right: 10px
+    z-index: 1
   .services-item
     position: relative
 //Not found
@@ -695,6 +700,15 @@ img
   right: 0
   z-index: 4
   display: none
+  background-color: #00000073
+  overflow-y: auto
+.thx-text
+  display: none
+.thx-text-container
+  display: flex
+  font-size: 20px
+  align-items: center
+  height: 208px
 .popup-wrapper
   width: 100%
   height: 100%
@@ -730,8 +744,19 @@ img
   display: none
   text-align: center
   margin-bottom: 30px
-  font-weight: bold
-  color: #a9a3a3
+  font-weight: 700
+  color: #333333
+  position: absolute
+  opacity: 0.9
+  justify-content: center
+  align-items: center
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  background: #f7ecec
+  bottom: 0
+  height: 100%
 //Info pages
 .info-page,.list-page
   margin: 40px 0 20px 0
@@ -744,20 +769,8 @@ img
   grid-template-rows: 1fr
   grid-gap: 20px
   align-items: center
-  &.page-list-v1
-    .list-page-type
-      color: $white
-      background-color: #38a5dd
-  &.page-list-v2
-    .list-page-type
-      color: $white
-      background-color: #950c0c
-      font-size: 18px
-  &.page-list-v3
-    .list-page-type
-      background-color: #f8f8f8
-      color: $black
-      font-size: 18px
+.list-page-one-column
+  grid-template-columns: 1fr
 .list-page-item
   grid-template-rows: 1fr
   grid-template-columns: 40px 1fr
@@ -767,4 +780,10 @@ img
   height: 40px
   line-height: 40px
   border-radius: 6px
+  font-size: 18px
+  background-color: #38a5dd
+  color: $white
+.btn-table-popup
+  padding: 5px
+  margin: 0 auto
 @import 'media'

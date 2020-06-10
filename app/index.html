@@ -130,7 +130,7 @@
 				</div>
 				<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem eos, inventore iste maiores officiis quibusdam sed suscipit ut voluptate voluptatum. Beatae explicabo fugit hic obcaecati quia sed suscipit tempora voluptas?</blockquote>
 			</div>
-			<ul class="grid-container list-page-list page-list-v3">
+			<ul class="grid-container list-page-list page-list-v1">
 				<li class="grid-container list-page-item">
 					<div class="list-page-type"></div>
 					<div class="list-page-item-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A culpa error illum ipsum libero nesciunt rem suscipit voluptatum? Ducimus ea earum eligendi eveniet excepturi laborum officia quasi sed sequi unde.</div>
@@ -208,9 +208,19 @@
 	<div class="flex-container popup-wrapper">
 		<div class="popup-container">
 			<i class="fas fa-times popup-close"></i>
-			<input type="text" class="popup-input" placeholder="Your name">
-			<input type="email" class="popup-input" placeholder="Your Email">
-			<input type="submit" class="btn btn-submit btn-submit-popup" value="Submit">
+			<div class="popup-form">
+				<label  class="contact-form-label">Name*</label>
+				<input type="text" class="popup-input" placeholder="Your name">
+				<label class="contact-form-label">Email*</label>
+				<input type="email" class="popup-input" placeholder="Your Email">
+				<input type="submit" class="btn btn-submit btn-submit-popup" value="Submit">
+				<span class="popup-info">* Required fields</span>
+			</div>
+			<div class="thx-text">
+				<div class="thx-text-container">
+					Thank you, you request has been delivered
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -218,10 +228,20 @@
 	<div class="flex-container popup-wrapper">
 		<div class="popup-container">
 			<i class="fas fa-times popup-close"></i>
-			<input type="text" class="popup-input" placeholder="Your name">
-			<input type="email" class="popup-input" placeholder="Your Email">
-			<input type="hidden" class="popup-package">
-			<input type="submit" class="btn btn-submit btn-submit-popup" value="Submit">
+			<div class="popup-form">
+				<label class="contact-form-label">Name*</label>
+				<input type="text" id="name" class="popup-input" placeholder="Your name">
+				<label class="contact-form-label">Email*</label>
+				<input type="email" id="email" class="popup-input" placeholder="Your Email">
+				<input type="hidden" class="popup-package">
+				<input type="submit" class="btn btn-submit btn-submit-popup" value="Submit">
+				<span class="popup-info">* Required fields</span>
+			</div>
+			<div class="thx-text">
+				<div class="thx-text-container">
+					Thank you, you request has been delivered
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
