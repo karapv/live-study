@@ -150,14 +150,14 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     //Table button
     if($('.service-content table').length>0){
-        const currentTr = $('.service-content table tr:first-child td:not(:first-child)'),
+        const currentTr = $('.service-content table:not(.original-table) tr:first-child td:not(:first-child)'),
               currentPackages = [];
         currentTr.each(function () {
             currentPackages.push(`<td><button class="btn  btn-table-popup" data-package="${$(this).text()}">Order</button></td>`);
         });
-        $('.service-content table tbody').append(`
+        $('.service-content table:not(.original-table) tbody').append(`
         <tr class="table-buttons">
-           <td></td>
+           <td></td> 
         </tr>
         `);
         for(let i = 0;i<currentPackages.length;i++){
