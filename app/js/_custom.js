@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (videos[i].getAttribute('data-youtube-img') !== '') {
                     videos[i].style.backgroundImage = 'url(' + videos[i].getAttribute('data-youtube-img') + ')';
                 } else {
-                    videos[i].style.backgroundImage = 'url(http://i.ytimg.com/vi/' + videos[i].dataset.youtube + '/sddefault.jpg)';
+                    videos[i].style.backgroundImage = 'url(//i.ytimg.com/vi/' + videos[i].dataset.youtube + '/sddefault.jpg)';
                 }
                 // Размещаем над постером кнопку Play, чтобы создать эффект плеера
                 const play = document.createElement("div"),
@@ -236,5 +236,13 @@ document.addEventListener("DOMContentLoaded", function() {
         })
     }
     togglePopup('.btn-request','.popup-consult');
+    //Read more
+    if($('.read-more-text').length){
+        $('.read-more-text').readmore({
+            speed: 250,
+            moreLink: '<span class="btn read-more-btn">Read more</span>',
+            lessLink: '<span class="btn read-more-btn">Close</span>'
+        })
+    }
 });
 
