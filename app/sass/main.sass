@@ -224,7 +224,6 @@ img
       color: $white
 .header-bottom
   background-color: #f8f8f8
-  padding: 5px 0
 .header-menu
   justify-content: flex-start
   a
@@ -232,7 +231,7 @@ img
     font-weight: 600
     text-decoration: none
     color: #222222
-    padding: 10px 5px
+    padding: 15px 5px
 .header-menu-item
   margin-right: 2%
   position: relative
@@ -244,16 +243,13 @@ img
   align-items: center
   a
     width: 97%
+    font-weight: 500
   span
     width: 5%
 .sub-menu
-  li
-    a
-      font-weight: 500
-.sub-menu
-  top: 44px
+  top: 55px
   position: absolute
-  border-radius: 0 0 6px 6px
+  border: 2px solid #c7cac7
   background-color: #f8f8f8
   width: 250px
   display: none
@@ -262,7 +258,7 @@ img
     position: relative
     margin-right: 0
     .sub-menu
-      right: -250px
+      right: -258px
       top: -2px
 .toggle-btn
   color: #222222
@@ -797,8 +793,13 @@ img
 //Read more
 .read-more-text
   overflow: hidden
-  max-height: 195px
 .read-more-btn
   display: block
   margin: 0 auto
+  text-align: center
+  font-size: 1.2rem
+.original-table
+  tr:nth-child(2)
+    color: #fff
+    background-color: #38a5dd
 @import 'media'

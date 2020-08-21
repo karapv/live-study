@@ -240,8 +240,9 @@ document.addEventListener("DOMContentLoaded", function() {
     if($('.read-more-text').length){
         $('.read-more-text').readmore({
             speed: 250,
-            moreLink: '<span class="btn read-more-btn">Read more</span>',
-            lessLink: '<span class="btn read-more-btn">Close</span>'
+            collapsedHeight: 100,
+            moreLink: '<span class="fas fa-chevron-down read-more-btn"></span>',
+            lessLink: '<span class="fas fa-chevron-up read-more-btn"></span>'
         })
     }
 });
