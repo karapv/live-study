@@ -245,5 +245,15 @@ document.addEventListener("DOMContentLoaded", function() {
             lessLink: '<span class="fas fa-chevron-up read-more-btn"></span>'
         })
     }
+    if($('.banner-slider').length){
+        $('.banner-slider').slick({
+            dots: false,
+            arrows: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            infinite: true
+        })
+    }
 });
 

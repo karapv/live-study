@@ -23,7 +23,7 @@
     border: 2px solid $white
     border-radius: 3px
     position: absolute
-    top: 0
+    top: -5px
     left: 25px
     &.active
       .toggle-dec:nth-child(1)
@@ -111,8 +111,9 @@
     display: none
   .breadcrumbs
     padding-top: 45px
-    padding-bottom: 45px
-  section[class]
+  .service-subtitle
+    margin-top: 0  
+  section[class]:not(.main-banner)
     padding-top: 25px
     padding-bottom: 25px
     margin: 0
@@ -149,7 +150,7 @@
   .btn-banner
     max-width: 300px
     font-size: 18px
-  .main-banner
+  .banner-slider-item
     padding: 40px 0
   .btn:not(.btn-table-popup)
     padding: 14px
