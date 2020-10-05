@@ -173,10 +173,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (wt + wh >= et || wh + wt == dh || eh + et < wh) {
                     count+=1;
                     if(count === 1) {
-                        $('.service-content table tbody').append(`<span class="mobile-table-message">Rotate your device to see all table <img src="/wp-content/themes/study/img/icons/rotation.webp" alt="rotation" class="rotation-img"></span>`);
+                        $('.service-content table tbody').append(`<span class="mobile-table-message">Please, turn your phone horizontally to see all prices <img src="/wp-content/themes/study/img/icons/rotation.webp" alt="rotation" class="rotation-img"></span>`);
                         setTimeout(() => {
                             $('.mobile-table-message').fadeOut('fast');
-                        }, 3000);
+                        }, 8000);
                     }
                 }
         });
@@ -248,11 +248,26 @@ document.addEventListener("DOMContentLoaded", function() {
     if($('.banner-slider').length){
         $('.banner-slider').slick({
             dots: false,
-            arrows: false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
+            arrows: true,
             autoplay: true,
-            infinite: true
+            infinite: true,
+            centerMode: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            variableWidth: true,
+            prevArrow: '<div class="banner-slider-btn banner-slider-btn-left"><i class="fas fa-chevron-left"></i></div>',
+            nextArrow: '<div class="banner-slider-btn banner-slider-btn-right"><i class="fas fa-chevron-right"></i></div>',
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        variableWidth: false,
+                        slidesToScroll: 1,
+                        slidesToShow: 1,
+                        centerMode: false
+                    }
+                }
+            ]
         })
     }
 });
