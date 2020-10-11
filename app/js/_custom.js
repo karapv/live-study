@@ -250,21 +250,17 @@ document.addEventListener("DOMContentLoaded", function() {
             dots: false,
             arrows: true,
             autoplay: true,
+            autoplaySpeed: 5000,
             infinite: true,
-            centerMode: true,
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            variableWidth: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
             prevArrow: '<div class="banner-slider-btn banner-slider-btn-left"><i class="fas fa-chevron-left"></i></div>',
             nextArrow: '<div class="banner-slider-btn banner-slider-btn-right"><i class="fas fa-chevron-right"></i></div>',
             responsive: [
                 {
-                    breakpoint: 1024,
+                    breakpoint: 995,
                     settings: {
-                        variableWidth: false,
-                        slidesToScroll: 1,
-                        slidesToShow: 1,
-                        centerMode: false
+                        arrows: false
                     }
                 }
             ]
