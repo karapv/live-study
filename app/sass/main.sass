@@ -277,16 +277,32 @@ img
 //Banner
 .banner-slider
   position: relative
-  .slick-track
+  .slick-dots
+    font-size: 0
+    position: absolute
+    bottom: 15px
+    height: auto
+    width: 100%
     display: flex
-    justify-content: center
     flex-wrap: nowrap
+    justify-content: center
+    li>button
+      border-radius: 50%
+      border: 1px solid #fff
+      width: 10px
+      height: 10px
+      display: block
+      background: transparent
+    .slick-active>button
+      background: #fff
+    li:not(:last-child)
+      margin-right: 0.4rem
 .banner-slider-btn
   position: absolute
   top: 0
   height: 100%
   width: 6% 
-  background: #4a484899
+  background: transparent
   display: flex
   align-items: center
   z-index: 1
@@ -317,6 +333,7 @@ img
   width: max-content
   padding: 24px
   color: #222
+  font-weight: 600
   &:hover
     color: #222
 //Who we are

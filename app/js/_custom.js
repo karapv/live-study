@@ -247,7 +247,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     if($('.banner-slider').length){
         $('.banner-slider').slick({
-            dots: false,
+            dots: true,
             arrows: true,
             autoplay: true,
             autoplaySpeed: 5000,
@@ -260,7 +260,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 {
                     breakpoint: 995,
                     settings: {
-                        arrows: false
+                        arrows: false,
+                        dots: false
                     }
                 }
             ]
